@@ -1,0 +1,222 @@
+@import "compass/css3";
+
+@import '../partials/variables'; // colors, fonts etc...
+
+@import '../partials/layout'; // responsive grid and media queries
+
+body{
+	background: $bg-color;
+	font-size: 14px;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+p {
+	font-family: $p-font;
+}
+
+ul > li > a {
+	color: #fff;
+	text-decoration: none;
+	font-family: $main-font;
+	font-weight: 600;
+}
+
+button {
+	background: $yellow;
+	font-family: $main-font;
+	font-weight: 800;
+	font-size: 0.7rem;
+	text-transform: uppercase;
+	color: #000;
+	width: 100%;
+	padding: 12px 0;
+	border: 0px solid;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+input[type=text], select {
+	background: transparent;
+	font-family: $main-font;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #fff;
+	width: 100%;
+	margin-bottom: 40px;
+	padding: 10px;
+	border: none;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+
+	option {
+		color: #000;
+	}
+}
+
+
+
+.nav {
+	background: $bg-dark;
+	height: 55px;
+
+	.nav__logo {
+		float: left;
+		margin: 19px 0 0 20px;
+	}
+
+	.nav__lister {
+		position: absolute;
+		background: $bg-dark;
+		top: 55px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 1000;
+		padding: 50px 40px 0 40px;
+
+		li {
+			margin-bottom: 40px;
+		}
+	}
+
+	.nav__connexion {	
+		float: right;
+
+		li {
+			border-left: 2px solid rgba(255, 255, 255, 0.1);
+		}
+
+		li a {
+			display: block;
+			height: 55px;
+			width: 55px;	
+		}
+
+		.profil {
+			float: left;
+			
+			a {
+				padding: 18px 0 0 19px;
+			}
+		}
+		.search {
+			float: right;
+			
+			a {
+				padding: 18px 0 0 18px;
+				position:relative;
+				z-index: 2000;
+			}
+		}
+	}
+}
+
+.pro span {
+	color: $blue;
+}
+
+@media only screen and (min-width : 1170px) {
+	.nav {
+		height: 65px;
+
+		.nav__logo {
+			background: $yellow;
+			margin:0;
+			padding: 24px 30px 20px;
+		}
+		.nav__burger {
+			display: none;
+		}
+		.nav__lister {
+			position: static;
+			display: block !important;
+			float: left;
+			padding: 16px 0 0 0;
+
+			li  {
+				float: left;
+				padding: 10px 0 0 40px ;
+				margin-bottom: 0;
+			}
+
+			&:after {
+				clear: both;
+				content: "";
+				display: table;
+			 }
+		}
+		.nav__connexion {	
+
+			li a {
+				height: 65px;
+				width: 65px;	
+			}
+
+			.profil {
+				a {
+					padding: 23px 0 0 24px;
+				}
+			}
+			.search {
+				a {
+					padding: 23px 0 0 22px;
+				}
+			}
+		}
+		.search__overlay {
+			top: 65px;
+		}
+	}
+
+}
+
+.nav::after {
+  clear: both;
+  content: "";
+  display: table;
+ }
+
+.nav__burger {
+	position: relative;
+	width: 22px;
+	height: 16px;
+	float: left;
+	margin: 20px 0 0 16px;
+	cursor: pointer;
+	z-index: 1000;
+
+	span {
+		display: block;
+		position: absolute;
+		height: 2px;
+		width: 100%;
+		background: #fff;
+
+		&:nth-child(2) {
+			top: 7px;
+		}
+
+		&:nth-child(3) {
+			top: 14px;
+		}
+	}
+}
+
+
+.search__overlay {
+	position: absolute;
+	background: $bg-dark;
+	top: 55px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	padding: 70px 20px 0 20px;
+}
+
+
+.invisible {
+	display:none;
+}

@@ -1,0 +1,216 @@
+@font-face {
+  font-family: 'proxima_nova';
+  src: url("proxima_nova_bold_italic-webfont.woff2") format("woff2"), url("proxima_nova_bold_italic-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'proxima_nova';
+  src: url("proxima_nova_bold-webfont.woff2") format("woff2"), url("proxima_nova_bold-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'proxima_nova';
+  src: url("proxima_nova_semibold_italic-webfont.woff2") format("woff2"), url("proxima_nova_semibold_italic-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'proxima_nova';
+  src: url("proxima_nova_semibold-webfont.woff2") format("woff2"), url("proxima_nova_semibold-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'proxima_nova';
+  src: url("proximanova-regular-webfont.woff2") format("woff2"), url("proximanova-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background: #f5f6f8;
+  font-size: 14px;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+ul > li > a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "proxima_nova", sans-serif;
+  font-weight: 600;
+}
+
+button {
+  background: #f3cc2f;
+  font-family: "proxima_nova", sans-serif;
+  font-weight: 800;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: #000;
+  width: 100%;
+  padding: 12px 0;
+  border: 0px solid;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type=text], select {
+  background: transparent;
+  font-family: "proxima_nova", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+input[type=text] option, select option {
+  color: #000;
+}
+
+.nav {
+  background: #21292d;
+  height: 55px;
+}
+.nav .nav__logo {
+  float: left;
+  margin: 19px 0 0 20px;
+}
+.nav .nav__lister {
+  position: absolute;
+  background: #21292d;
+  top: 55px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 50px 40px 0 40px;
+}
+.nav .nav__lister li {
+  margin-bottom: 40px;
+}
+.nav .nav__connexion {
+  float: right;
+}
+.nav .nav__connexion li {
+  border-left: 2px solid rgba(255, 255, 255, 0.1);
+}
+.nav .nav__connexion li a {
+  display: block;
+  height: 55px;
+  width: 55px;
+}
+.nav .nav__connexion .profil {
+  float: left;
+}
+.nav .nav__connexion .profil a {
+  padding: 18px 0 0 19px;
+}
+.nav .nav__connexion .search {
+  float: right;
+}
+.nav .nav__connexion .search a {
+  padding: 18px 0 0 18px;
+  position: relative;
+  z-index: 2000;
+}
+
+.pro span {
+  color: #00a8d3;
+}
+
+@media only screen and (min-width: 1170px) {
+  .nav {
+    height: 65px;
+  }
+  .nav .nav__logo {
+    background: #f3cc2f;
+    margin: 0;
+    padding: 24px 30px 20px;
+  }
+  .nav .nav__burger {
+    display: none;
+  }
+  .nav .nav__lister {
+    position: static;
+    display: block !important;
+    float: left;
+    padding: 16px 0 0 0;
+  }
+  .nav .nav__lister li {
+    float: left;
+    padding: 10px 0 0 40px;
+    margin-bottom: 0;
+  }
+  .nav .nav__lister:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  .nav .nav__connexion li a {
+    height: 65px;
+    width: 65px;
+  }
+  .nav .nav__connexion .profil a {
+    padding: 23px 0 0 24px;
+  }
+  .nav .nav__connexion .search a {
+    padding: 23px 0 0 22px;
+  }
+  .nav .search__overlay {
+    top: 65px;
+  }
+}
+.nav::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.nav__burger {
+  position: relative;
+  width: 22px;
+  height: 16px;
+  float: left;
+  margin: 20px 0 0 16px;
+  cursor: pointer;
+  z-index: 1000;
+}
+.nav__burger span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #fff;
+}
+.nav__burger span:nth-child(2) {
+  top: 7px;
+}
+.nav__burger span:nth-child(3) {
+  top: 14px;
+}
+
+.search__overlay {
+  position: absolute;
+  background: #21292d;
+  top: 55px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 70px 20px 0 20px;
+}
+
+.invisible {
+  display: none;
+}
