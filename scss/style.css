@@ -1,312 +1,56 @@
-@font-face {
-  font-family: 'proxima_nova';
-  src: url("../fonts/Proxima/proxima_nova_bold_italic-webfont.woff2") format("woff2"), url("../fonts/Proxima/proxima_nova_bold_italic-webfont.woff") format("woff");
-  font-weight: 600;
-  font-style: italic; }
-@font-face {
-  font-family: 'proxima_nova';
-  src: url("../fonts/Proxima/proxima_nova_bold-webfont.woff2") format("woff2"), url("../fonts/Proxima/proxima_nova_bold-webfont.woff") format("woff");
-  font-weight: 600;
-  font-style: normal; }
-@font-face {
-  font-family: 'proxima_nova';
-  src: url("../fonts/Proxima/proxima_nova_semibold_italic-webfont.woff2") format("woff2"), url("../fonts/Proxima/proxima_nova_semibold_italic-webfont.woff") format("woff");
-  font-weight: 400;
-  font-style: italic; }
-@font-face {
-  font-family: 'proxima_nova';
-  src: url("../fonts/Proxima/proxima_nova_semibold-webfont.woff2") format("woff2"), url("../fonts/Proxima/proxima_nova_semibold-webfont.woff") format("woff");
-  font-weight: 400;
-  font-style: normal; }
-@font-face {
-  font-family: 'proxima_nova';
-  src: url("../fonts/Proxima/proximanova-regular-webfont.woff2") format("woff2"), url("../fonts/Proxima/proximanova-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-body {
-  background: #f5f6f8;
-  font-size: 14px; }
+/*
+Error: File to import not found or unreadable: compass/css3.
+        on line 1 of style.scss
 
-*, *::after, *::before {
-  box-sizing: border-box; }
+1: @import "compass/css3";
+2: 
+3: @import '../partials/variables'; // colors, fonts etc...
+4: 
+5: @import '../partials/layout'; // responsive grid and media queries
+6: 
 
-p {
-  font-family: "Open Sans", sans-serif; }
-
-ul > li > a {
-  color: #fff;
-  text-decoration: none;
-  font-family: "proxima_nova", sans-serif;
-  font-weight: 600; }
-
-h1 {
-  text-transform: uppercase;
-  font-family: "proxima_nova", sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-  color: #21292d; }
-
-button {
-  background: #f3cc2f;
-  font-family: "proxima_nova", sans-serif;
-  font-weight: 800;
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  color: #000;
-  width: 100%;
-  padding: 12px 0;
-  border: 0px solid;
-  border-radius: 3px;
-  cursor: pointer; }
-
-input[type=text], select {
-  background: transparent;
-  font-family: "proxima_nova", sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #fff;
-  width: 100%;
-  margin-bottom: 40px;
-  padding: 10px;
-  border: none;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.1); }
-  input[type=text] option, select option {
-    color: #000; }
-
-/*Contenu*/
-.middle-content {
-  margin-right: 80px;
-  margin-left: 80px; }
-
-/*Navigation*/
-.nav {
-  background: #21292d;
-  height: 55px; }
-  .nav .nav__logo {
-    float: left;
-    margin: 19px 0 0 20px; }
-  .nav .nav__lister {
-    position: absolute;
-    background: #21292d;
-    top: 55px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    padding: 50px 40px 0 40px; }
-    .nav .nav__lister li {
-      margin-bottom: 40px; }
-  .nav .nav__connexion {
-    float: right; }
-    .nav .nav__connexion li {
-      border-left: 2px solid rgba(255, 255, 255, 0.1); }
-    .nav .nav__connexion li a {
-      display: block;
-      height: 55px;
-      width: 55px; }
-    .nav .nav__connexion .profil {
-      float: left; }
-      .nav .nav__connexion .profil a {
-        padding: 18px 0 0 19px; }
-    .nav .nav__connexion .search {
-      float: right; }
-      .nav .nav__connexion .search a {
-        padding: 18px 0 0 18px;
-        position: relative;
-        z-index: 2000; }
-
-.pro span {
-  color: #00a8d3; }
-
-@media only screen and (min-width: 1170px) {
-  .nav {
-    height: 65px; }
-    .nav .nav__logo {
-      background: #f3cc2f;
-      margin: 0;
-      padding: 24px 30px 20px; }
-    .nav .nav__burger {
-      display: none; }
-    .nav .nav__lister {
-      position: static;
-      display: block !important;
-      float: left;
-      padding: 16px 0 0 0; }
-      .nav .nav__lister li {
-        float: left;
-        padding: 10px 0 0 40px;
-        margin-bottom: 0; }
-      .nav .nav__lister:after {
-        clear: both;
-        content: "";
-        display: table; }
-    .nav .nav__connexion li a {
-      height: 65px;
-      width: 65px; }
-    .nav .nav__connexion .profil a {
-      padding: 23px 0 0 24px; }
-    .nav .nav__connexion .search a {
-      padding: 23px 0 0 22px; }
-    .nav .search__overlay {
-      top: 65px; } }
-.nav::after {
-  clear: both;
-  content: "";
-  display: table; }
-
-.nav__burger {
-  position: relative;
-  width: 22px;
-  height: 16px;
-  float: left;
-  margin: 20px 0 0 16px;
-  cursor: pointer;
-  z-index: 1000; }
-  .nav__burger span {
-    display: block;
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    background: #fff; }
-    .nav__burger span:nth-child(2) {
-      top: 7px; }
-    .nav__burger span:nth-child(3) {
-      top: 14px; }
-
-.search__overlay {
-  position: absolute;
-  background: #21292d;
-  top: 55px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  padding: 70px 20px 0 20px; }
-
-.invisible {
-  display: none; }
-
-/*Slider*/
-/* jssor slider loading skin oval css */
-.jssorl-oval img {
-  animation-name: jssorl-oval;
-  animation-duration: 1.2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; }
-
-@keyframes jssorl-oval {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
-.jssorb05 {
-  position: absolute; }
-
-.jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  background: url("../img/b05.png") no-repeat;
-  overflow: hidden;
-  cursor: pointer; }
-
-.jssorb05 div {
-  background-position: -7px -7px; }
-
-.jssorb05 div:hover, .jssorb05 .av:hover {
-  background-position: -37px -7px; }
-
-.jssorb05 .av {
-  background-position: -67px -7px; }
-
-.jssorb05 .dn, .jssorb05 .dn:hover {
-  background-position: -97px -7px; }
-
-.jssora22l, .jssora22r {
-  display: block;
-  position: absolute;
-  width: 40px;
-  height: 58px;
-  cursor: pointer;
-  background: url("../img/a22.png") center center no-repeat;
-  overflow: hidden; }
-
-.jssora22l {
-  background-position: -10px -31px; }
-
-.jssora22r {
-  background-position: -70px -31px; }
-
-.jssora22l:hover {
-  background-position: -130px -31px; }
-
-.jssora22r:hover {
-  background-position: -190px -31px; }
-
-.jssora22l.jssora22ldn {
-  background-position: -250px -31px; }
-
-.jssora22r.jssora22rdn {
-  background-position: -310px -31px; }
-
-.jssora22l.jssora22lds {
-  background-position: -10px -31px;
-  opacity: .3;
-  pointer-events: none; }
-
-.jssora22r.jssora22rds {
-  background-position: -70px -31px;
-  opacity: .3;
-  pointer-events: none; }
-
-#jssor_1 {
-  position: relative;
-  margin: 0 auto;
-  top: 0px;
-  left: 0px;
-  width: 1500px;
-  height: 600px;
-  overflow: hidden;
-  visibility: hidden; }
-
-.jssorl-oval {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.7); }
-
-.jssorl-oval img {
-  margin-top: -19.0px;
-  position: relative;
-  top: 50%;
-  width: 38px;
-  height: 38px; }
-
-.slide {
-  cursor: default;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  width: 1500px;
-  height: 600px;
-  overflow: hidden; }
-
-/* */
-section {
-  display: flex; }
-
-article {
-  flex: 3; }
-
-aside {
-  flex: 1.2;
-  position: relative;
-  padding: 10px;
-  color: white;
-  font-size: 0.9em; }
-
-.follow {
-  background-color: #f5f6f8; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+style.scss:1
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/import_node.rb:45:in `import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/bin/scss:13:in `<top (required)>'
+/usr/local/bin/scss:23:in `load'
+/usr/local/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: compass/css3.\A         on line 1 of style.scss\A \A 1: @import \"compass/css3\";\A 2: \A 3: @import '../partials/variables'; // colors, fonts etc...\A 4: \A 5: @import '../partials/layout'; // responsive grid and media queries\A 6: "; }
