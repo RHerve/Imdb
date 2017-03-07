@@ -14,6 +14,11 @@
 		left: -70px;
 	}
 
+	/*NAVIGATION*/
+	.search__overlay {
+		padding: 10px 0 0 0s;
+	}
+
 	/*CAROUSSEL*/
 	.single-item img {
 		width: 100%;
@@ -319,7 +324,7 @@ ul > li > a {
 	font-weight: 600;
 }
 
-h1 {
+h1, h2 {
 	font-size: 25px;
 	text-transform: uppercase;
 	font-family: "proxima_nova", sans-serif;
@@ -327,7 +332,7 @@ h1 {
 	color: $bg-dark;
 }
 
-h3, h2 {
+h3 {
 	text-transform: uppercase;
 	font-family: "proxima_nova", sans-serif;
 	font-size: 18px;
@@ -549,7 +554,7 @@ hr {
 	left: 0;
 	right: 0;
 	z-index: 1000;
-	padding: 70px 200px 0 200px;
+	padding: 70px 50px 0 50px;
 	text-align: center;
 }
 
@@ -594,6 +599,8 @@ section {
 }
 
 .movie-text button {
+	width: 200px;
+	height: 50px;
 	margin-top: 20px;
 }
 
@@ -637,10 +644,11 @@ article {
 }
 
 .wonder {
-	width: 100%;
+	width: 90%;
 }
 
 .ln-1 ul {
+	width: 90%;
 	border-bottom: 1px solid #21292d;
 	height: 26px;
 	margin-bottom: 10px;
