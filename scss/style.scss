@@ -319,7 +319,15 @@ ul > li > a {
 	font-weight: 600;
 }
 
-h1, h3, h2 {
+h1 {
+	font-size: 25px;
+	text-transform: uppercase;
+	font-family: "proxima_nova", sans-serif;
+	font-weight: bold;
+	color: $bg-dark;
+}
+
+h3, h2 {
 	text-transform: uppercase;
 	font-family: "proxima_nova", sans-serif;
 	font-size: 18px;
@@ -605,8 +613,13 @@ article {
 	margin: 0px 20px;
 }
 
-.slider img {
+.slider div {
 	padding: 5px 20px;
+}
+
+.slider p {
+	font-size: 10px;
+	opacity: 0.5;
 }
 
 .opening, .coming {
@@ -644,6 +657,11 @@ article {
 
 .ln-2 {
 	margin-top: 20px;
+}
+
+.ln-2 span, .ul-ln2-text span {
+	font-size: 10px;
+	opacity: 0.5;
 }
 
 .ln-1 ul li:nth-child(2) {
@@ -691,6 +709,12 @@ article {
 	justify-content: space-around;
 }
 
+
+.ts-ul p {
+	font-size: 10px;
+	opacity: 0.5;
+}
+
 .ts-ul img {
 	margin-bottom: 10px;
 }
@@ -704,7 +728,7 @@ aside {
 	color: white;
 	font-size: 0.9em;
 	background: $light-gray;
-	height: 1070px;
+	height: 100%;
 }
 
 .hits {
