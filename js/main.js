@@ -1,3 +1,4 @@
+/*Menu burger*/
 var burger = document.getElementById("toggle");
 var menu = document.getElementById("toggle-menu");
 
