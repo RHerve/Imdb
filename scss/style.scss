@@ -602,10 +602,11 @@ article {
 .slider {
 	display: block;
 	width: 90%;
+	margin: 0px 20px;
 }
 
-.slider {
-	margin: 0px 20px;
+.slider img {
+	padding: 5px 20px;
 }
 
 .opening, .coming {
@@ -722,6 +723,10 @@ aside {
 
 .movies {
 	margin-top: 20px;
+}
+
+.movies img {
+	width: 100%;
 }
 
 .twitter {
