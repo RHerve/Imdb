@@ -473,12 +473,14 @@ footer {
 }
 
 /*Mobile*/
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 970px){
   .opening, .coming {
     display: none;
   }
 }
+
 @media screen and (max-width: 320px) {
+
   .middle-content h1 {
     position: relative;
     left: -70px;
@@ -530,4 +532,266 @@ footer {
   aside {
     display: none;
   }
+
 }
+
+
+
+/********** TABLETTE 767PX **********/
+
+@media screen and (max-width: 767px) {
+
+  aside {
+    display: none;
+  }
+
+  .middle-content h1 {
+    position: relative;
+    left: -50px;
+  }
+
+  middle-content .movie {
+    height: 40%;
+    width: 20%;
+  }
+
+
+  .last-news .ln-1 {
+    margin-left: -70px;
+  }
+
+  .last-news .ln-2 {
+    margin-top: 20px;
+    margin-left: -70px;
+  }
+
+  .last-news .ln-2 li p {
+    width: 70%;
+  }
+
+}
+
+/********** 481PX - 767PX **********/
+
+@media screen and (min-width: 481px) and (max-width:767px) {
+
+
+}
+
+
+/********** 321PX - 480PX **********/
+
+@media screen and (min-width: 321px) and (max-width:480px) {
+
+  .middle-content h1 {
+    position: relative;
+    left: -70px;
+  }
+
+  .wonder {
+    width: 390px;
+    margin-left: -70px;
+  }
+
+  .last-news .ln-1 {
+    margin-left: -70px;
+  }
+
+  .last-news .ln-2 {
+    margin-top: 20px;
+    margin-left: -70px;
+  }
+
+  .last-news .ln-2 li p {
+    width: 200px;
+  }
+
+  .last-news .ln-3 {
+    display: none;
+  }
+
+  aside {
+    display: none;
+  }
+
+  .top-stars .ts-ul2 {
+    display: block;
+  }
+
+  .top-stars .dan, .emma {
+    padding-top: 30px;
+  }
+
+  .top-stars .tom, .luke, .top-stars .dan, .emma {
+    padding: 10px;
+  }
+
+  .top-stars .star1, .star2, .star3, .star4 {
+    height: 230px;
+    width: 190px;
+  }
+
+  .top-stars .star5, .star6 {
+    display: none;
+  }
+
+  footer {
+    height: 1100px;
+  }
+
+  .foot-bloc .logo-foot {
+    position: relative;
+    left: 180px;
+    top: -5px;
+  }
+
+  #foot-bloc-1 .reseaux {
+    display: inline-block;
+    position: relative;
+    left: 490px;
+    top: -35px;
+  }
+
+  #foot-bloc-1 p {
+    position: relative;
+    left: 180px;
+    margin-top: -20px;
+    width: 140%;
+  }
+
+  #foot-bloc-2 .imdb {
+    margin-top: 750px;
+  }
+
+  .foot-bloc .footer-ul-center {
+    width: 100px;
+    margin-top: 70px;
+    margin-left: -10%;
+    line-height: 30px;
+  }
+
+  #foot-bloc-3 .footer-ul-center {
+    margin-top: 750px;
+    position: relative;
+    left: -100px;
+  }
+
+  #foot-bloc-4 {
+    position: relative;
+    left: -210px;
+    margin-top: 180px;
+  }
+
+  #subscribe {
+    width: 350px;
+  }
+
+}
+
+
+/********** MOBILE 320PX **********/
+
+@media screen and (max-width: 320px) {
+
+  .middle-content h1 {
+    position: relative;
+    left: -70px;
+  }
+
+  .middle-content .movie {
+    height: 40%;
+    width: 20%;
+  }
+
+
+  .last-news .ln-1 {
+    margin-left: -70px;
+  }
+
+  .last-news .ln-2 {
+    margin-top: 20px;
+    margin-left: -70px;
+  }
+
+  .last-news .ln-2 li p {
+    width: 70%;
+  }
+
+  .last-news .ln-3 {
+    display: none;
+  }
+
+  aside {
+    display: none;
+  }
+
+  .top-stars .ts-ul2 {
+    display: block;
+  }
+
+  .top-stars .dan, .emma {
+    padding-top: 30px;
+  }
+
+  .top-stars .star1, .star2, .star3, .star4 {
+    height: 190px;
+    width: 150px;
+  }
+
+  .top-stars .star5, .star6 {
+    display: none;
+  }
+
+  .foot-bloc .logo-foot {
+    position: relative;
+    left: 190px;
+    top: -5px;
+  }
+
+  footer {
+    height: 1100px;
+  }
+
+  #foot-bloc-1 .reseaux {
+    display: inline-block;
+    position: relative;
+    left: 370px;
+    top: -35px;
+  }
+
+  #foot-bloc-1 p {
+    position: relative;
+    left: 190px;
+    margin-top: -20px;
+    width: 140%;
+  }
+
+  #foot-bloc-2 .imdb {
+    margin-top: 750px;
+  }
+
+  .foot-bloc .footer-ul-center {
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 5%;
+    line-height: 30px;
+  }
+
+  #foot-bloc-3 .footer-ul-center {
+    margin-top: 750px;
+    position: relative;
+    left: -100px;
+  }
+
+  #foot-bloc-4 {
+    position: relative;
+    left: -200px;
+    margin-top: 180px;
+  }
+
+  #subscribe {
+    width: 250px;
+  }
+
+}
+
